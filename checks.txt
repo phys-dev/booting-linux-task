@@ -1,0 +1,47 @@
+Legacy BIOS
+BIOS_OK
+Personalities : [raid1]
+md0 : active raid1 vdb3[1] vda3[2]
+7856128 blocks super 1.2 [2/2] [UU]
+unused devices: <none>
+
+UEFI
+UEFI_OK
+BootCurrent: 0009
+BootOrder: 0009,0008,0000,0003,0004,0005,0006,0007,0001,0002
+Boot0008* ArchA	HD(2,GPT,f4d7076c-99df-47d0-aab8-627b73161cff,0x1000,0x100000)/\EFI\ArchA\grubx64.efi
+Boot0009* ArchB	HD(2,GPT,18003600-fe66-4cbd-a53b-ed2a64094929,0x1000,0x100000)/\EFI\ArchB\grubx64.efi
+Personalities : [raid1]
+md0 : active raid1 vda3[2] vdb3[1]
+7856128 blocks super 1.2 [2/2] [UU]
+unused devices: <none>
+
+Disk B only
+SINGLE_DISK
+Personalities : [raid1]
+md0 : active raid1 vda3[1]
+7856128 blocks super 1.2 [2/1] [_U]
+unused devices: <none>
+
+Disk A returned
+RESYNC_OK
+mdadm: added /dev/vda3
+Personalities : [raid1]
+md0 : active raid1 vda3[2] vdb3[1]
+7856128 blocks super 1.2 [2/2] [UU]
+unused devices: <none>
+
+Disk A only
+SINGLE_DISK
+Personalities : [raid1]
+md0 : active raid1 vda3[2]
+7856128 blocks super 1.2 [2/1] [U_]
+unused devices: <none>
+
+Disk B returned
+RESYNC_OK
+mdadm: added /dev/vdb3
+Personalities : [raid1]
+md0 : active raid1 vdb3[3] vda3[2]
+7856128 blocks super 1.2 [2/2] [UU]
+unused devices: <none>
